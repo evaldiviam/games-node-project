@@ -50,7 +50,7 @@ export const registerUser = async (req, res) => {
     }
 }
 
-// Autentica un nuevo usuario
+// Autentica un usuario
 /*------------------------------------------*/
 export const loginUser = async (req, res) => {
     try {
