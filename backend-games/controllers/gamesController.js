@@ -25,7 +25,6 @@ export const searchGamesByName = async (req, res) => {
 
 export const searchGamesByCategory = async (req, res) => {
     try {
-        const { query } = req.params;
         const documents = await Games.find({ category:ObjectId(req.params.idCategory) })
                                 .populate("category");
             
